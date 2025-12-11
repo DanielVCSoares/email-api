@@ -19,7 +19,7 @@ app.post("/send-email", async (req, res) => {
 
   try {
     const response = await resend.emails.send({
-      from: "onboarding@resend.dev",
+      from: "Casa Materna <onboarding@resend.dev>",
       to: ["danielvcsoares@yahoo.com.br"],
       subject: `Nova mensagem do site - ${name}`,
       html: `
