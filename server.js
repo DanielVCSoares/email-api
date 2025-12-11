@@ -1,4 +1,3 @@
-// server.js
 import express from "express";
 import cors from "cors";
 import { Resend } from "resend";
@@ -43,10 +42,4 @@ app.post("/send-email", async (req, res) => {
 // Porta automática do Render
 app.listen(process.env.PORT || 3000, () => {
   console.log("Servidor rodando...");
-});
-
-// Porta automática do Render
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Servidor rodando...");
-
 });
